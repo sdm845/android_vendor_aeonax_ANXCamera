@@ -1,0 +1,19 @@
+# ANXCamera for beryllium (only)
+
+## Getting Started :
+
+1.Clone this repo
+
+    git clone https://github.com/sdm845/android_vendor_aeonax_ANXCamera -b master vendor/aeonax/ANXCamera
+
+2.Inherit and Include makefiles
+
+In BoardConfig.mk
+
+    -include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
+In device.mk
+
+    $(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
+
+3.Build your ROM as you do normally.

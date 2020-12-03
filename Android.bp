@@ -2,37 +2,15 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "ANXCamera",
+	name: "MIUICamera",
 	overrides: ["Snap", "Camera2"],
-	owner: "ANXCamera",
-	apk: "proprietary/system/priv-app/ANXCamera/ANXCamera.apk",
+	owner: "Xiaomi",
+	apk: "proprietary/system/priv-app/MIUICamera/MIUICamera.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-android_app_import {
-        name: "ANXExtraPhoto",
-        owner: "ANXExtraPhoto",
-        apk: "proprietary/system/priv-app/ANXExtraPhoto/ANXExtraPhoto.apk",
-        certificate: "platform",
-        dex_preopt: {
-                enabled: false,
-        },
-        privileged: true,
-}
-
-android_app_import {
-        name: "ANXScanner",
-        owner: "ANXScanner",
-        apk: "proprietary/system/priv-app/ANXScanner/ANXScanner.apk",
-        certificate: "platform",
-        dex_preopt: {
-                enabled: false,
-        },
-        privileged: true,
 }
 
 android_app_import {
